@@ -1,0 +1,88 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 3.0 License
+
+Name       : Big Business
+Description: A two-column, fixed-width design with a bright color scheme.
+Version    : 1.0
+Released   : 20120210
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<title>${title}</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+
+</head>
+<body>
+
+<div id="header">
+<div id="title-space"></div>
+<a href="index.html"><center><img src="images/TitleBlockText.png"></center></a>
+</div>
+	<div id="menu">
+		<ul>
+% for c in categories:					  
+					  <li><a href="${c[1]}">${c[0]}</a></li>
+% endfor		
+
+		</ul>
+		<br class="clearfix" />
+	</div>
+
+<div id="wrapper">
+
+
+	<div id="specialscontent">
+
+	<div class="box">
+
+
+% for spec in specials:
+<p>
+  <div id = "specials_logo" >
+<img src = "${spec[-1]}" >
+ </div>
+
+<div id = "spage" >
+<strong>
+${spec[0]}<br>
+</strong>
+% for x in spec[1:-1]:
+${x}<br>
+% endfor
+
+</div>
+</p>
+% endfor
+
+</p>
+<div id = "specials_logo">
+</div>
+<strong><i>All promotions subject to qualification by vendor.</i></strong>
+
+<div id = "page">
+
+</div>
+
+		</div>
+		<br class="clearfix" />
+		</div>
+		</div>
+		<br class="clearfix" />
+		<br class="clearfix" />
+	</div>
+</div>
+
+<div id="footer">
+</div>
+</body>
+</html>

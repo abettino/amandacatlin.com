@@ -1,0 +1,42 @@
+/* example_5 css */  
+#example_5 {  
+    position: relative; /* important */  
+    overflow: hidden; /* important */  
+    width: 172px; /* important */  
+    height: 212px; /* important */  
+    background: #000;  
+}  
+  
+#example_5_frame {position: relative}  
+#example_5_frame img {position: absolute;}  
+#example_5_previous {top: 0; left: 0;}  
+#example_5_next {top: 192px; left: 0;}  
+  
+#example_5_content {  
+    position: absolute;  
+    margin-top: 20px;  
+    left: 0;  
+}  
+  
+.example_5_item {  
+    padding: 5px;  
+    height: 162px;  
+    background: #000;  
+    text-align: left;  
+}  
+  
+.example_5_item h4 {  
+    font-size: 85%;  
+    color: #fff;  
+}  
+  
+.example_5_item p {  
+    font-size: 77%;  
+    color: #ccc;  
+}  
+  
+#container_bd .example_5_item a {  
+    color: #ff0;  
+    text-decoration: underline;  
+}  
+    #container_bd .example_5_item a:hover {color: #0f0;}  
